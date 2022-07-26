@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.9" prefHeight="556.0" prefWidth="337.0" style="-fx-background-color: #9acbe8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cdm.controllers.RegistrarDepController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="337.0" style="-fx-background-color: #000000; -fx-region-border: 20;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="69.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/img/L2.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="backBtn" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#btnBackOnMosueCliked" prefHeight="40.0" prefWidth="44.0" text="←">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnGuardar" layoutX="107.0" layoutY="490.0" mnemonicParsing="false" onMouseClicked="#BtnOnMouseGuardarCliked" prefHeight="26.0" prefWidth="124.0" style="-fx-background-color: #000000;" text="Guardar" textFill="WHITE">
+         <effect>
+            <Reflection topOpacity="0.12" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="28.0" layoutY="112.0" text="Nombre">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="27.0" layoutY="128.0" prefHeight="26.0" prefWidth="117.0" />
+      <Label layoutX="193.0" layoutY="400.0" text="Crear Contraseña" textAlignment="CENTER">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="Password" layoutX="183.0" layoutY="422.0" prefHeight="26.0" prefWidth="118.0" />
+      <Label layoutX="27.0" layoutY="178.0" text="Edad">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="112.0" text="Apellido">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEdad" layoutX="27.0" layoutY="194.0" prefHeight="26.0" prefWidth="118.0" />
+      <TextField fx:id="txtApellido" layoutX="183.0" layoutY="128.0" prefHeight="26.0" prefWidth="118.0" />
+      <TextField fx:id="txtCorreoElec" layoutX="27.0" layoutY="349.0" prefHeight="26.0" prefWidth="133.0" />
+      <Label layoutX="36.0" layoutY="326.0" text="Correo electronico">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="86.0" layoutX="202.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/img/Usuario.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="400.0" text="Crear Username">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="387.0" />
+      <TextField fx:id="txtUsername" layoutX="27.0" layoutY="422.0" prefHeight="26.0" prefWidth="118.0" />
+      <TextField fx:id="txtEstatura" layoutX="183.0" layoutY="195.0" prefHeight="25.0" prefWidth="118.0" />
+      <Label layoutX="169.0" layoutY="178.0">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="178.0" text="Estatura">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="243.0" text="Peso">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPeso" layoutX="27.0" layoutY="265.0" prefHeight="26.0" prefWidth="118.0" />
+   </children>
+</AnchorPane>

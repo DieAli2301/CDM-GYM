@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.9" prefHeight="558.0" prefWidth="337.0" style="-fx-background-color: #9acbe8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cdm.controllers.ListaDepController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="337.0" style="-fx-background-color: #000000; -fx-region-border: 20;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="69.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/img/L2.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnRegresar1" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#btnOnMouseClikedRegresar1" prefHeight="40.0" prefWidth="44.0" text="←">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnSalir" layoutX="130.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#btnOnSalirCliked" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #ff0000;" text="Salir" textFill="WHITE">
+         <effect>
+            <Reflection topOpacity="0.09" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="96.0" layoutY="117.0" text="LISTA DE DEPORTISTAS">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ComBox" layoutX="83.0" layoutY="143.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="15.0" layoutY="207.0" text="ASIGNAR RUTINA">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="botonGuardar" layoutX="15.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#OnbtnGuardarClicked" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #000000;" text="Guardar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="txtRutina" layoutX="12.0" layoutY="229.0" prefHeight="204.0" prefWidth="314.0" />
+   </children>
+</AnchorPane>

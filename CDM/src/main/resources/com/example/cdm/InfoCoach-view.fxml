@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.9" prefHeight="558.0" prefWidth="337.0" style="-fx-background-color: #9acbe8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cdm.controllers.InfoCoachController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="337.0" style="-fx-background-color: #000000; -fx-region-border: 20;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="69.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/img/L2.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="BtnRegresar" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#btnOnRegresarCliked" prefHeight="40.0" prefWidth="44.0" text="←">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnSalir" layoutX="137.0" layoutY="502.0" mnemonicParsing="false" onMouseClicked="#btnOnSalirCliked" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #ff0000;" text="Salir" textFill="WHITE">
+         <effect>
+            <Reflection topOpacity="0.09" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="21.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/img/Usuario.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="txtArea" layoutX="7.0" layoutY="175.0" onMouseClicked="#OntxtAreaClicked" prefHeight="161.0" prefWidth="324.0" style="-fx-background-color: #000000;" />
+      <Button fx:id="btnMostrar" layoutX="92.0" layoutY="132.0" mnemonicParsing="false" onMouseClicked="#OnMostrarClicked" style="-fx-background-color: #000000;" text="Mostrar Informacion" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="92.0" layoutY="342.0" opacity="0.04" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/img/L%7D.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
